@@ -1,0 +1,20 @@
+% ページサイズの設定
+\usepackage[left=20truemm, right=20truemm]{geometry}
+\setlength{\headheight}{16pt}
+
+% 目次や図表の参照をハイパーリンクにする
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% ヘッダー・フッターの設定
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\rightmark}
+\fancyfoot[C]{\thepage}
