@@ -2,6 +2,8 @@
 
 これは、LaTeXでノートや資料を作るためのテンプレートです。
 
+[サンプルPDF](example_notebook/build/main.pdf)
+
 ## 準備
 
 このテンプレートを使うには
@@ -9,6 +11,8 @@
 * 完全な TeX Live 環境
 
 が必要です。
+Windowsについては、[WSL](https://learn.microsoft.com/ja-jp/windows/wsl/install)を使ってUbuntuをインストールするのが便利です。
+WSLでの動作確認はできています。
 
 Ubuntu ならば、以下のコマンドでインストールできます。
 
