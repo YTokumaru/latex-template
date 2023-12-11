@@ -17,6 +17,11 @@ WSLでの動作確認はできています。
 Ubuntu ならば、以下のコマンドでインストールできます。
 
 ```bash
+#アップデートと更新
+sudo apt update
+sudo apt upgrade
+
+# TeX Liveのインストール
 sudo apt install texlive-full
 ```
 
