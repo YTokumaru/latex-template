@@ -35,6 +35,55 @@ $pdf_mode = 4;
 $max_repeat = 5;
 ```
 
+### VSCodeと一緒に使う
+
+VSCodeでLaTeXを書く場合は、`LaTeX Workshop`をインストールした上で、以下の設定を`settings.json`に書いて置くと、`latexmk`を使ってコンパイルできます。
+
+```json
+{
+    // 生成ファイルを "/build" ディレクトリに吐き出す
+    "latex-workshop.latex.outDir": "build",
+    // ビルドのレシピ
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": ["latexmk"]
+        }
+    ],
+    // ビルドのレシピに使われるパーツ
+    "latex-workshop.latex.tools": [
+        {
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": ["-silent", "-outdir=%OUTDIR%", "%DOC%"]
+        }
+    ],
+}
+```
+
+また、以下は参考までに私のその他設定です。
+
+```json
+{
+        "[latex]": {
+        // スニペット補完中にも補完を使えるようにする
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        // Parse # in LaTeX
+        "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?。．、，（）「」『』［］｛｝《》てにをはがのともへでや 、",
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "other": "on",
+            "comments": "off",
+            "strings": "on" // used for comlpletion of /ref{...}, /textbf{...}, etc.
+        },
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+    },
+    "latex-workshop.linting.chktex.enabled": true,
+    "latex-workshop.intellisense.package.enabled": true,
+}
+```
+
 ## 使い方
 
 GitHubで「Use this template」をクリックして、リポジトリを作成するのが便利です。
