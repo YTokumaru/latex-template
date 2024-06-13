@@ -2,13 +2,15 @@
 \usepackage{import}
 \subimport{../preamble}{preamble}
 
-\begin{document}
+
 \title{令和の\LaTeX テンプレート}
 \author{Author name}
 \date{\the\year}
-\maketitle
-\tableofcontents
 
-\import{.}{math}
-\import{.}{chapter1}
+\begin{document}
+\maketitle
+
+\subimport{math}{math}
+\subimport{example}{example}
+
 \end{document}
