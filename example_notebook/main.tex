@@ -1,6 +1,6 @@
 \documentclass[a4paper,11pt]{ltjreport}
 \usepackage{import}
-\import{../}{preamble}
+\subimport{../}{preamble}
 
 \begin{document}
 \title{令和の\LaTeX テンプレート}
@@ -8,6 +8,7 @@
 \date{\the\year}
 \maketitle
 \tableofcontents
-\input{chapter0.tex}
-\input{chapter1}
+
+\import{.}{math}
+\import{.}{chapter1}
 \end{document}

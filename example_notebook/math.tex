@@ -1,0 +1,302 @@
+\chapter{数式}
+
+\section{文字}
+
+\verb|unicode-math|を用いて太字、斜体などを統一的に扱えるようにしている。
+
+\subsection{通常文字}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{cc}
+        \toprule
+        コマンド                  & 出力                   \\
+        \midrule
+        \verb|\symup{0123456789}| & \(\symup{0123456789}\) \\
+        \bottomrule
+    \end{tabular}
+    \caption{通常の数字}
+    \label{tab:upright_numbers}
+\end{table}
+
+\begin{longtable}{cccccccc}
+    \toprule
+    コマンド         & 出力          & コマンド         & 出力          & コマンド                & 出力                 & コマンド                   & 出力                    \\
+    \midrule
+    \verb|\symup{A}| & \(\symup{A}\) & \verb|\symup{a}| & \(\symup{a}\) & \verb|\symup{\Alpha}|   & \(\symup{\Alpha}\)   & \verb|\symup{\alpha}|      & \(\symup{\alpha}\)      \\
+    \verb|\symup{B}| & \(\symup{B}\) & \verb|\symup{b}| & \(\symup{b}\) & \verb|\symup{\Beta}|    & \(\symup{\Beta}\)    & \verb|\symup{\beta}|       & \(\symup{\beta}\)       \\
+    \verb|\symup{C}| & \(\symup{C}\) & \verb|\symup{c}| & \(\symup{c}\) & \verb|\symup{\Gamma}|   & \(\symup{\Gamma}\)   & \verb|\symup{\gamma}|      & \(\symup{\gamma}\)      \\
+    \verb|\symup{D}| & \(\symup{D}\) & \verb|\symup{d}| & \(\symup{d}\) & \verb|\symup{\Delta}|   & \(\symup{\Delta}\)   & \verb|\symup{\delta}|      & \(\symup{\delta}\)      \\
+    \verb|\symup{E}| & \(\symup{E}\) & \verb|\symup{e}| & \(\symup{e}\) & \verb|\symup{\Epsilon}| & \(\symup{\Epsilon}\) & \verb|\symup{\epsilon}|    & \(\symup{\epsilon}\)    \\
+    \verb|\symup{F}| & \(\symup{F}\) & \verb|\symup{f}| & \(\symup{f}\) & \verb|\symup{\Zeta}|    & \(\symup{\Zeta}\)    & \verb|\symup{\zeta}|       & \(\symup{\zeta}\)       \\
+    \verb|\symup{G}| & \(\symup{G}\) & \verb|\symup{g}| & \(\symup{g}\) & \verb|\symup{\Eta}|     & \(\symup{\Eta}\)     & \verb|\symup{\eta}|        & \(\symup{\eta}\)        \\
+    \verb|\symup{H}| & \(\symup{H}\) & \verb|\symup{h}| & \(\symup{h}\) & \verb|\symup{\Theta}|   & \(\symup{\Theta}\)   & \verb|\symup{\theta}|      & \(\symup{\theta}\)      \\
+    \verb|\symup{I}| & \(\symup{I}\) & \verb|\symup{i}| & \(\symup{i}\) & \verb|\symup{\Iota}|    & \(\symup{\Iota}\)    & \verb|\symup{\iota}|       & \(\symup{\iota}\)       \\
+    \verb|\symup{J}| & \(\symup{J}\) & \verb|\symup{j}| & \(\symup{j}\) & \verb|\symup{\Kappa}|   & \(\symup{\Kappa}\)   & \verb|\symup{\kappa}|      & \(\symup{\kappa}\)      \\
+    \verb|\symup{K}| & \(\symup{K}\) & \verb|\symup{k}| & \(\symup{k}\) & \verb|\symup{\Lambda}|  & \(\symup{\Lambda}\)  & \verb|\symup{\lambda}|     & \(\symup{\lambda}\)     \\
+    \verb|\symup{L}| & \(\symup{L}\) & \verb|\symup{l}| & \(\symup{l}\) & \verb|\symup{\Mu}|      & \(\symup{\Mu}\)      & \verb|\symup{\mu}|         & \(\symup{\mu}\)         \\
+    \verb|\symup{M}| & \(\symup{M}\) & \verb|\symup{m}| & \(\symup{m}\) & \verb|\symup{\Nu}|      & \(\symup{\Nu}\)      & \verb|\symup{\nu}|         & \(\symup{\nu}\)         \\
+    \verb|\symup{N}| & \(\symup{N}\) & \verb|\symup{n}| & \(\symup{n}\) & \verb|\symup{\Xi}|      & \(\symup{\Xi}\)      & \verb|\symup{\xi}|         & \(\symup{\xi}\)         \\
+    \verb|\symup{O}| & \(\symup{O}\) & \verb|\symup{o}| & \(\symup{o}\) & \verb|\symup{O}|        & \(\symup{O}\)        & \verb|\symup{o}|           & \(\symup{o}\)           \\
+    \verb|\symup{P}| & \(\symup{P}\) & \verb|\symup{p}| & \(\symup{p}\) & \verb|\symup{\Pi}|      & \(\symup{\Pi}\)      & \verb|\symup{\pi}|         & \(\symup{\pi}\)         \\
+    \verb|\symup{Q}| & \(\symup{Q}\) & \verb|\symup{q}| & \(\symup{q}\) & \verb|\symup{\Rho}|     & \(\symup{\Rho}\)     & \verb|\symup{\rho}|        & \(\symup{\rho}\)        \\
+    \verb|\symup{R}| & \(\symup{R}\) & \verb|\symup{r}| & \(\symup{r}\) & \verb|\symup{\Sigma}|   & \(\symup{\Sigma}\)   & \verb|\symup{\sigma}|      & \(\symup{\sigma}\)      \\
+    \verb|\symup{S}| & \(\symup{S}\) & \verb|\symup{s}| & \(\symup{s}\) & \verb|\symup{\Tau}|     & \(\symup{\Tau}\)     & \verb|\symup{\tau}|        & \(\symup{\tau}\)        \\
+    \verb|\symup{T}| & \(\symup{T}\) & \verb|\symup{t}| & \(\symup{t}\) & \verb|\symup{\Upsilon}| & \(\symup{\Upsilon}\) & \verb|\symup{\upsilon}|    & \(\symup{\upsilon}\)    \\
+    \verb|\symup{U}| & \(\symup{U}\) & \verb|\symup{u}| & \(\symup{u}\) & \verb|\symup{\Phi}|     & \(\symup{\Phi}\)     & \verb|\symup{\phi}|        & \(\symup{\phi}\)        \\
+    \verb|\symup{V}| & \(\symup{V}\) & \verb|\symup{v}| & \(\symup{v}\) & \verb|\symup{\Chi}|     & \(\symup{\Chi}\)     & \verb|\symup{\chi}|        & \(\symup{\chi}\)        \\
+    \verb|\symup{W}| & \(\symup{W}\) & \verb|\symup{w}| & \(\symup{w}\) & \verb|\symup{\Psi}|     & \(\symup{\Psi}\)     & \verb|\symup{\psi}|        & \(\symup{\psi}\)        \\
+    \verb|\symup{X}| & \(\symup{X}\) & \verb|\symup{x}| & \(\symup{x}\) & \verb|\symup{\Omega}|   & \(\symup{\Omega}\)   & \verb|\symup{\omega}|      & \(\symup{\omega}\)      \\
+    \verb|\symup{Y}| & \(\symup{Y}\) & \verb|\symup{y}| & \(\symup{y}\) &                         &                      & \verb|\symup{\varepsilon}| & \(\symup{\varepsilon}\) \\
+    \verb|\symup{Z}| & \(\symup{Z}\) & \verb|\symup{z}| & \(\symup{z}\) &                         &                      & \verb|\symup{\vartheta}|   & \(\symup{\vartheta}\)   \\
+    \bottomrule
+    \caption{通常のアルファベットとギリシャ文字}
+    \label{tab:upright_letters}
+\end{longtable}
+
+\subsection{斜体}
+
+\begin{longtable}{cccccccc}
+    \toprule
+    コマンド         & 出力          & コマンド         & 出力          & コマンド                & 出力                 & コマンド                   & 出力                    \\
+    \midrule
+    \verb|\symit{A}| & \(\symit{A}\) & \verb|\symit{a}| & \(\symit{a}\) & \verb|\symit{\Alpha}|   & \(\symit{\Alpha}\)   & \verb|\symit{\alpha}|      & \(\symit{\alpha}\)      \\
+    \verb|\symit{B}| & \(\symit{B}\) & \verb|\symit{b}| & \(\symit{b}\) & \verb|\symit{\Beta}|    & \(\symit{\Beta}\)    & \verb|\symit{\beta}|       & \(\symit{\beta}\)       \\
+    \verb|\symit{C}| & \(\symit{C}\) & \verb|\symit{c}| & \(\symit{c}\) & \verb|\symit{\Gamma}|   & \(\symit{\Gamma}\)   & \verb|\symit{\gamma}|      & \(\symit{\gamma}\)      \\
+    \verb|\symit{D}| & \(\symit{D}\) & \verb|\symit{d}| & \(\symit{d}\) & \verb|\symit{\Delta}|   & \(\symit{\Delta}\)   & \verb|\symit{\delta}|      & \(\symit{\delta}\)      \\
+    \verb|\symit{E}| & \(\symit{E}\) & \verb|\symit{e}| & \(\symit{e}\) & \verb|\symit{\Epsilon}| & \(\symit{\Epsilon}\) & \verb|\symit{\epsilon}|    & \(\symit{\epsilon}\)    \\
+    \verb|\symit{F}| & \(\symit{F}\) & \verb|\symit{f}| & \(\symit{f}\) & \verb|\symit{\Zeta}|    & \(\symit{\Zeta}\)    & \verb|\symit{\zeta}|       & \(\symit{\zeta}\)       \\
+    \verb|\symit{G}| & \(\symit{G}\) & \verb|\symit{g}| & \(\symit{g}\) & \verb|\symit{\Eta}|     & \(\symit{\Eta}\)     & \verb|\symit{\eta}|        & \(\symit{\eta}\)        \\
+    \verb|\symit{H}| & \(\symit{H}\) & \verb|\symit{h}| & \(\symit{h}\) & \verb|\symit{\Theta}|   & \(\symit{\Theta}\)   & \verb|\symit{\theta}|      & \(\symit{\theta}\)      \\
+    \verb|\symit{I}| & \(\symit{I}\) & \verb|\symit{i}| & \(\symit{i}\) & \verb|\symit{\Iota}|    & \(\symit{\Iota}\)    & \verb|\symit{\iota}|       & \(\symit{\iota}\)       \\
+    \verb|\symit{J}| & \(\symit{J}\) & \verb|\symit{j}| & \(\symit{j}\) & \verb|\symit{\Kappa}|   & \(\symit{\Kappa}\)   & \verb|\symit{\kappa}|      & \(\symit{\kappa}\)      \\
+    \verb|\symit{K}| & \(\symit{K}\) & \verb|\symit{k}| & \(\symit{k}\) & \verb|\symit{\Lambda}|  & \(\symit{\Lambda}\)  & \verb|\symit{\lambda}|     & \(\symit{\lambda}\)     \\
+    \verb|\symit{L}| & \(\symit{L}\) & \verb|\symit{l}| & \(\symit{l}\) & \verb|\symit{\Mu}|      & \(\symit{\Mu}\)      & \verb|\symit{\mu}|         & \(\symit{\mu}\)         \\
+    \verb|\symit{M}| & \(\symit{M}\) & \verb|\symit{m}| & \(\symit{m}\) & \verb|\symit{\Nu}|      & \(\symit{\Nu}\)      & \verb|\symit{\nu}|         & \(\symit{\nu}\)         \\
+    \verb|\symit{N}| & \(\symit{N}\) & \verb|\symit{n}| & \(\symit{n}\) & \verb|\symit{\Xi}|      & \(\symit{\Xi}\)      & \verb|\symit{\xi}|         & \(\symit{\xi}\)         \\
+    \verb|\symit{O}| & \(\symit{O}\) & \verb|\symit{o}| & \(\symit{o}\) & \verb|\symit{O}|        & \(\symit{O}\)        & \verb|\symit{o}|           & \(\symit{o}\)           \\
+    \verb|\symit{P}| & \(\symit{P}\) & \verb|\symit{p}| & \(\symit{p}\) & \verb|\symit{\Pi}|      & \(\symit{\Pi}\)      & \verb|\symit{\pi}|         & \(\symit{\pi}\)         \\
+    \verb|\symit{Q}| & \(\symit{Q}\) & \verb|\symit{q}| & \(\symit{q}\) & \verb|\symit{\Rho}|     & \(\symit{\Rho}\)     & \verb|\symit{\rho}|        & \(\symit{\rho}\)        \\
+    \verb|\symit{R}| & \(\symit{R}\) & \verb|\symit{r}| & \(\symit{r}\) & \verb|\symit{\Sigma}|   & \(\symit{\Sigma}\)   & \verb|\symit{\sigma}|      & \(\symit{\sigma}\)      \\
+    \verb|\symit{S}| & \(\symit{S}\) & \verb|\symit{s}| & \(\symit{s}\) & \verb|\symit{\Tau}|     & \(\symit{\Tau}\)     & \verb|\symit{\tau}|        & \(\symit{\tau}\)        \\
+    \verb|\symit{T}| & \(\symit{T}\) & \verb|\symit{t}| & \(\symit{t}\) & \verb|\symit{\Upsilon}| & \(\symit{\Upsilon}\) & \verb|\symit{\upsilon}|    & \(\symit{\upsilon}\)    \\
+    \verb|\symit{U}| & \(\symit{U}\) & \verb|\symit{u}| & \(\symit{u}\) & \verb|\symit{\Phi}|     & \(\symit{\Phi}\)     & \verb|\symit{\phi}|        & \(\symit{\phi}\)        \\
+    \verb|\symit{V}| & \(\symit{V}\) & \verb|\symit{v}| & \(\symit{v}\) & \verb|\symit{\Chi}|     & \(\symit{\Chi}\)     & \verb|\symit{\chi}|        & \(\symit{\chi}\)        \\
+    \verb|\symit{W}| & \(\symit{W}\) & \verb|\symit{w}| & \(\symit{w}\) & \verb|\symit{\Psi}|     & \(\symit{\Psi}\)     & \verb|\symit{\psi}|        & \(\symit{\psi}\)        \\
+    \verb|\symit{X}| & \(\symit{X}\) & \verb|\symit{x}| & \(\symit{x}\) & \verb|\symit{\Omega}|   & \(\symit{\Omega}\)   & \verb|\symit{\omega}|      & \(\symit{\omega}\)      \\
+    \verb|\symit{Y}| & \(\symit{Y}\) & \verb|\symit{y}| & \(\symit{y}\) &                         &                      & \verb|\symit{\varepsilon}| & \(\symit{\varepsilon}\) \\
+    \verb|\symit{Z}| & \(\symit{Z}\) & \verb|\symit{z}| & \(\symit{z}\) &                         &                      & \verb|\symit{\vartheta}|   & \(\symit{\vartheta}\)   \\
+    \bottomrule
+    \caption{斜体のアルファベットとギリシャ文字}
+    \label{tab:italic_letters}
+\end{longtable}
+
+\subsection{太字}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{cc}
+        \toprule
+        コマンド                  & 出力                   \\
+        \midrule
+        \verb|\symbf{0123456789}| & \(\symbf{0123456789}\) \\
+        \bottomrule
+    \end{tabular}
+    \caption{Bold numbers}
+    \label{tab:bold_numbers}
+\end{table}
+
+\begin{longtable}{cccccccc}
+    \toprule
+    コマンド         & 出力          & コマンド         & 出力          & コマンド                & 出力                 & コマンド                   & 出力                    \\
+    \midrule
+    \verb|\symbf{A}| & \(\symbf{A}\) & \verb|\symbf{a}| & \(\symbf{a}\) & \verb|\symbf{\Alpha}|   & \(\symbf{\Alpha}\)   & \verb|\symbf{\alpha}|      & \(\symbf{\alpha}\)      \\
+    \verb|\symbf{B}| & \(\symbf{B}\) & \verb|\symbf{b}| & \(\symbf{b}\) & \verb|\symbf{\Beta}|    & \(\symbf{\Beta}\)    & \verb|\symbf{\beta}|       & \(\symbf{\beta}\)       \\
+    \verb|\symbf{C}| & \(\symbf{C}\) & \verb|\symbf{c}| & \(\symbf{c}\) & \verb|\symbf{\Gamma}|   & \(\symbf{\Gamma}\)   & \verb|\symbf{\gamma}|      & \(\symbf{\gamma}\)      \\
+    \verb|\symbf{D}| & \(\symbf{D}\) & \verb|\symbf{d}| & \(\symbf{d}\) & \verb|\symbf{\Delta}|   & \(\symbf{\Delta}\)   & \verb|\symbf{\delta}|      & \(\symbf{\delta}\)      \\
+    \verb|\symbf{E}| & \(\symbf{E}\) & \verb|\symbf{e}| & \(\symbf{e}\) & \verb|\symbf{\Epsilon}| & \(\symbf{\Epsilon}\) & \verb|\symbf{\epsilon}|    & \(\symbf{\epsilon}\)    \\
+    \verb|\symbf{F}| & \(\symbf{F}\) & \verb|\symbf{f}| & \(\symbf{f}\) & \verb|\symbf{\Zeta}|    & \(\symbf{\Zeta}\)    & \verb|\symbf{\zeta}|       & \(\symbf{\zeta}\)       \\
+    \verb|\symbf{G}| & \(\symbf{G}\) & \verb|\symbf{g}| & \(\symbf{g}\) & \verb|\symbf{\Eta}|     & \(\symbf{\Eta}\)     & \verb|\symbf{\eta}|        & \(\symbf{\eta}\)        \\
+    \verb|\symbf{H}| & \(\symbf{H}\) & \verb|\symbf{h}| & \(\symbf{h}\) & \verb|\symbf{\Theta}|   & \(\symbf{\Theta}\)   & \verb|\symbf{\theta}|      & \(\symbf{\theta}\)      \\
+    \verb|\symbf{I}| & \(\symbf{I}\) & \verb|\symbf{i}| & \(\symbf{i}\) & \verb|\symbf{\Iota}|    & \(\symbf{\Iota}\)    & \verb|\symbf{\iota}|       & \(\symbf{\iota}\)       \\
+    \verb|\symbf{J}| & \(\symbf{J}\) & \verb|\symbf{j}| & \(\symbf{j}\) & \verb|\symbf{\Kappa}|   & \(\symbf{\Kappa}\)   & \verb|\symbf{\kappa}|      & \(\symbf{\kappa}\)      \\
+    \verb|\symbf{K}| & \(\symbf{K}\) & \verb|\symbf{k}| & \(\symbf{k}\) & \verb|\symbf{\Lambda}|  & \(\symbf{\Lambda}\)  & \verb|\symbf{\lambda}|     & \(\symbf{\lambda}\)     \\
+    \verb|\symbf{L}| & \(\symbf{L}\) & \verb|\symbf{l}| & \(\symbf{l}\) & \verb|\symbf{\Mu}|      & \(\symbf{\Mu}\)      & \verb|\symbf{\mu}|         & \(\symbf{\mu}\)         \\
+    \verb|\symbf{M}| & \(\symbf{M}\) & \verb|\symbf{m}| & \(\symbf{m}\) & \verb|\symbf{\Nu}|      & \(\symbf{\Nu}\)      & \verb|\symbf{\nu}|         & \(\symbf{\nu}\)         \\
+    \verb|\symbf{N}| & \(\symbf{N}\) & \verb|\symbf{n}| & \(\symbf{n}\) & \verb|\symbf{\Xi}|      & \(\symbf{\Xi}\)      & \verb|\symbf{\xi}|         & \(\symbf{\xi}\)         \\
+    \verb|\symbf{O}| & \(\symbf{O}\) & \verb|\symbf{o}| & \(\symbf{o}\) & \verb|\symbf{O}|        & \(\symbf{O}\)        & \verb|\symbf{o}|           & \(\symbf{o}\)           \\
+    \verb|\symbf{P}| & \(\symbf{P}\) & \verb|\symbf{p}| & \(\symbf{p}\) & \verb|\symbf{\Pi}|      & \(\symbf{\Pi}\)      & \verb|\symbf{\pi}|         & \(\symbf{\pi}\)         \\
+    \verb|\symbf{Q}| & \(\symbf{Q}\) & \verb|\symbf{q}| & \(\symbf{q}\) & \verb|\symbf{\Rho}|     & \(\symbf{\Rho}\)     & \verb|\symbf{\rho}|        & \(\symbf{\rho}\)        \\
+    \verb|\symbf{R}| & \(\symbf{R}\) & \verb|\symbf{r}| & \(\symbf{r}\) & \verb|\symbf{\Sigma}|   & \(\symbf{\Sigma}\)   & \verb|\symbf{\sigma}|      & \(\symbf{\sigma}\)      \\
+    \verb|\symbf{S}| & \(\symbf{S}\) & \verb|\symbf{s}| & \(\symbf{s}\) & \verb|\symbf{\Tau}|     & \(\symbf{\Tau}\)     & \verb|\symbf{\tau}|        & \(\symbf{\tau}\)        \\
+    \verb|\symbf{T}| & \(\symbf{T}\) & \verb|\symbf{t}| & \(\symbf{t}\) & \verb|\symbf{\Upsilon}| & \(\symbf{\Upsilon}\) & \verb|\symbf{\upsilon}|    & \(\symbf{\upsilon}\)    \\
+    \verb|\symbf{U}| & \(\symbf{U}\) & \verb|\symbf{u}| & \(\symbf{u}\) & \verb|\symbf{\Phi}|     & \(\symbf{\Phi}\)     & \verb|\symbf{\phi}|        & \(\symbf{\phi}\)        \\
+    \verb|\symbf{V}| & \(\symbf{V}\) & \verb|\symbf{v}| & \(\symbf{v}\) & \verb|\symbf{\Chi}|     & \(\symbf{\Chi}\)     & \verb|\symbf{\chi}|        & \(\symbf{\chi}\)        \\
+    \verb|\symbf{W}| & \(\symbf{W}\) & \verb|\symbf{w}| & \(\symbf{w}\) & \verb|\symbf{\Psi}|     & \(\symbf{\Psi}\)     & \verb|\symbf{\psi}|        & \(\symbf{\psi}\)        \\
+    \verb|\symbf{X}| & \(\symbf{X}\) & \verb|\symbf{x}| & \(\symbf{x}\) & \verb|\symbf{\Omega}|   & \(\symbf{\Omega}\)   & \verb|\symbf{\omega}|      & \(\symbf{\omega}\)      \\
+    \verb|\symbf{Y}| & \(\symbf{Y}\) & \verb|\symbf{y}| & \(\symbf{y}\) &                         &                      & \verb|\symbf{\varepsilon}| & \(\symbf{\varepsilon}\) \\
+    \verb|\symbf{Z}| & \(\symbf{Z}\) & \verb|\symbf{z}| & \(\symbf{z}\) &                         &                      & \verb|\symbf{\vartheta}|   & \(\symbf{\vartheta}\)   \\
+    \bottomrule
+    \caption{太字のアルファベットとギリシャ文字}
+    \label{tab:bold_letters}
+\end{longtable}
+
+\subsection{筆記体}
+
+アルファベットのみ。ギリシャ文字は変わらない。数字も変わらない。
+
+\begin{longtable}{cc@{\hspace{2cm}}cc}
+    \toprule
+    コマンド          & 出力           & コマンド          & 出力           \\
+    \midrule
+    \verb|\symcal{A}| & \(\symcal{A}\) & \verb|\symcal{a}| & \(\symcal{a}\) \\
+    \verb|\symcal{B}| & \(\symcal{B}\) & \verb|\symcal{b}| & \(\symcal{b}\) \\
+    \verb|\symcal{C}| & \(\symcal{C}\) & \verb|\symcal{c}| & \(\symcal{c}\) \\
+    \verb|\symcal{D}| & \(\symcal{D}\) & \verb|\symcal{d}| & \(\symcal{d}\) \\
+    \verb|\symcal{E}| & \(\symcal{E}\) & \verb|\symcal{e}| & \(\symcal{e}\) \\
+    \verb|\symcal{F}| & \(\symcal{F}\) & \verb|\symcal{f}| & \(\symcal{f}\) \\
+    \verb|\symcal{G}| & \(\symcal{G}\) & \verb|\symcal{g}| & \(\symcal{g}\) \\
+    \verb|\symcal{H}| & \(\symcal{H}\) & \verb|\symcal{h}| & \(\symcal{h}\) \\
+    \verb|\symcal{I}| & \(\symcal{I}\) & \verb|\symcal{i}| & \(\symcal{i}\) \\
+    \verb|\symcal{J}| & \(\symcal{J}\) & \verb|\symcal{j}| & \(\symcal{j}\) \\
+    \verb|\symcal{K}| & \(\symcal{K}\) & \verb|\symcal{k}| & \(\symcal{k}\) \\
+    \verb|\symcal{L}| & \(\symcal{L}\) & \verb|\symcal{l}| & \(\symcal{l}\) \\
+    \verb|\symcal{M}| & \(\symcal{M}\) & \verb|\symcal{m}| & \(\symcal{m}\) \\
+    \verb|\symcal{N}| & \(\symcal{N}\) & \verb|\symcal{n}| & \(\symcal{n}\) \\
+    \verb|\symcal{O}| & \(\symcal{O}\) & \verb|\symcal{o}| & \(\symcal{o}\) \\
+    \verb|\symcal{P}| & \(\symcal{P}\) & \verb|\symcal{p}| & \(\symcal{p}\) \\
+    \verb|\symcal{Q}| & \(\symcal{Q}\) & \verb|\symcal{q}| & \(\symcal{q}\) \\
+    \verb|\symcal{R}| & \(\symcal{R}\) & \verb|\symcal{r}| & \(\symcal{r}\) \\
+    \verb|\symcal{S}| & \(\symcal{S}\) & \verb|\symcal{s}| & \(\symcal{s}\) \\
+    \verb|\symcal{T}| & \(\symcal{T}\) & \verb|\symcal{t}| & \(\symcal{t}\) \\
+    \verb|\symcal{U}| & \(\symcal{U}\) & \verb|\symcal{u}| & \(\symcal{u}\) \\
+    \verb|\symcal{V}| & \(\symcal{V}\) & \verb|\symcal{v}| & \(\symcal{v}\) \\
+    \verb|\symcal{W}| & \(\symcal{W}\) & \verb|\symcal{w}| & \(\symcal{w}\) \\
+    \verb|\symcal{X}| & \(\symcal{X}\) & \verb|\symcal{x}| & \(\symcal{x}\) \\
+    \verb|\symcal{Y}| & \(\symcal{Y}\) & \verb|\symcal{y}| & \(\symcal{y}\) \\
+    \verb|\symcal{Z}| & \(\symcal{Z}\) & \verb|\symcal{z}| & \(\symcal{z}\) \\
+    \bottomrule
+    \caption{筆記体のアルファベット}
+    \label{fig:calligraphic_alphabet}
+\end{longtable}
+
+\subsection{ドイツ文字}
+
+これはギリシャ文字ない。アルファベットのみ。数字も変化なし。
+
+\begin{longtable}{cc@{\hspace{2cm}}cc}
+    \toprule
+    コマンド           & 出力            & コマンド           & 出力            \\
+    \midrule
+    \verb|\symfrak{A}| & \(\symfrak{A}\) & \verb|\symfrak{a}| & \(\symfrak{a}\) \\
+    \verb|\symfrak{B}| & \(\symfrak{B}\) & \verb|\symfrak{b}| & \(\symfrak{b}\) \\
+    \verb|\symfrak{C}| & \(\symfrak{C}\) & \verb|\symfrak{c}| & \(\symfrak{c}\) \\
+    \verb|\symfrak{D}| & \(\symfrak{D}\) & \verb|\symfrak{d}| & \(\symfrak{d}\) \\
+    \verb|\symfrak{E}| & \(\symfrak{E}\) & \verb|\symfrak{e}| & \(\symfrak{e}\) \\
+    \verb|\symfrak{F}| & \(\symfrak{F}\) & \verb|\symfrak{f}| & \(\symfrak{f}\) \\
+    \verb|\symfrak{G}| & \(\symfrak{G}\) & \verb|\symfrak{g}| & \(\symfrak{g}\) \\
+    \verb|\symfrak{H}| & \(\symfrak{H}\) & \verb|\symfrak{h}| & \(\symfrak{h}\) \\
+    \verb|\symfrak{I}| & \(\symfrak{I}\) & \verb|\symfrak{i}| & \(\symfrak{i}\) \\
+    \verb|\symfrak{J}| & \(\symfrak{J}\) & \verb|\symfrak{j}| & \(\symfrak{j}\) \\
+    \verb|\symfrak{K}| & \(\symfrak{K}\) & \verb|\symfrak{k}| & \(\symfrak{k}\) \\
+    \verb|\symfrak{L}| & \(\symfrak{L}\) & \verb|\symfrak{l}| & \(\symfrak{l}\) \\
+    \verb|\symfrak{M}| & \(\symfrak{M}\) & \verb|\symfrak{m}| & \(\symfrak{m}\) \\
+    \verb|\symfrak{N}| & \(\symfrak{N}\) & \verb|\symfrak{n}| & \(\symfrak{n}\) \\
+    \verb|\symfrak{O}| & \(\symfrak{O}\) & \verb|\symfrak{o}| & \(\symfrak{o}\) \\
+    \verb|\symfrak{P}| & \(\symfrak{P}\) & \verb|\symfrak{p}| & \(\symfrak{p}\) \\
+    \verb|\symfrak{Q}| & \(\symfrak{Q}\) & \verb|\symfrak{q}| & \(\symfrak{q}\) \\
+    \verb|\symfrak{R}| & \(\symfrak{R}\) & \verb|\symfrak{r}| & \(\symfrak{r}\) \\
+    \verb|\symfrak{S}| & \(\symfrak{S}\) & \verb|\symfrak{s}| & \(\symfrak{s}\) \\
+    \verb|\symfrak{T}| & \(\symfrak{T}\) & \verb|\symfrak{t}| & \(\symfrak{t}\) \\
+    \verb|\symfrak{U}| & \(\symfrak{U}\) & \verb|\symfrak{u}| & \(\symfrak{u}\) \\
+    \verb|\symfrak{V}| & \(\symfrak{V}\) & \verb|\symfrak{v}| & \(\symfrak{v}\) \\
+    \verb|\symfrak{W}| & \(\symfrak{W}\) & \verb|\symfrak{w}| & \(\symfrak{w}\) \\
+    \verb|\symfrak{X}| & \(\symfrak{X}\) & \verb|\symfrak{x}| & \(\symfrak{x}\) \\
+    \verb|\symfrak{Y}| & \(\symfrak{Y}\) & \verb|\symfrak{y}| & \(\symfrak{y}\) \\
+    \verb|\symfrak{Z}| & \(\symfrak{Z}\) & \verb|\symfrak{z}| & \(\symfrak{z}\) \\
+    \bottomrule
+    \caption{ドイツ文字}
+    \label{fig:german_alphabet}
+\end{longtable}
+
+\subsection{二重線}
+
+ギリシャ文字の二重線はすべてがUnicodeで定義されているわけではない。表示できない文字もある。
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{cc}
+        \toprule
+        コマンド                  & 出力                   \\
+        \midrule
+        \verb|\symbb{0123456789}| & \(\symbb{0123456789}\) \\
+        \bottomrule
+    \end{tabular}
+    \caption{二重線の数字}
+    \label{tab:doubled_numbers}
+\end{table}
+
+\begin{longtable}{cccccccc}
+    \toprule
+    コマンド         & 出力          & コマンド         & 出力          & コマンド                & 出力                 & コマンド                   & 出力                    \\
+    \midrule
+    \verb|\symbb{A}| & \(\symbb{A}\) & \verb|\symbb{a}| & \(\symbb{a}\) & \verb|\symbb{\Alpha}|   & \(\symbb{\Alpha}\)   & \verb|\symbb{\alpha}|      & \(\symbb{\alpha}\)      \\
+    \verb|\symbb{B}| & \(\symbb{B}\) & \verb|\symbb{b}| & \(\symbb{b}\) & \verb|\symbb{\Beta}|    & \(\symbb{\Beta}\)    & \verb|\symbb{\beta}|       & \(\symbb{\beta}\)       \\
+    \verb|\symbb{C}| & \(\symbb{C}\) & \verb|\symbb{c}| & \(\symbb{c}\) & \verb|\symbb{\Gamma}|   & \(\symbb{\Gamma}\)   & \verb|\symbb{\gamma}|      & \(\symbb{\gamma}\)      \\
+    \verb|\symbb{D}| & \(\symbb{D}\) & \verb|\symbb{d}| & \(\symbb{d}\) & \verb|\symbb{\Delta}|   & \(\symbb{\Delta}\)   & \verb|\symbb{\delta}|      & \(\symbb{\delta}\)      \\
+    \verb|\symbb{E}| & \(\symbb{E}\) & \verb|\symbb{e}| & \(\symbb{e}\) & \verb|\symbb{\Epsilon}| & \(\symbb{\Epsilon}\) & \verb|\symbb{\epsilon}|    & \(\symbb{\epsilon}\)    \\
+    \verb|\symbb{F}| & \(\symbb{F}\) & \verb|\symbb{f}| & \(\symbb{f}\) & \verb|\symbb{\Zeta}|    & \(\symbb{\Zeta}\)    & \verb|\symbb{\zeta}|       & \(\symbb{\zeta}\)       \\
+    \verb|\symbb{G}| & \(\symbb{G}\) & \verb|\symbb{g}| & \(\symbb{g}\) & \verb|\symbb{\Eta}|     & \(\symbb{\Eta}\)     & \verb|\symbb{\eta}|        & \(\symbb{\eta}\)        \\
+    \verb|\symbb{H}| & \(\symbb{H}\) & \verb|\symbb{h}| & \(\symbb{h}\) & \verb|\symbb{\Theta}|   & \(\symbb{\Theta}\)   & \verb|\symbb{\theta}|      & \(\symbb{\theta}\)      \\
+    \verb|\symbb{I}| & \(\symbb{I}\) & \verb|\symbb{i}| & \(\symbb{i}\) & \verb|\symbb{\Iota}|    & \(\symbb{\Iota}\)    & \verb|\symbb{\iota}|       & \(\symbb{\iota}\)       \\
+    \verb|\symbb{J}| & \(\symbb{J}\) & \verb|\symbb{j}| & \(\symbb{j}\) & \verb|\symbb{\Kappa}|   & \(\symbb{\Kappa}\)   & \verb|\symbb{\kappa}|      & \(\symbb{\kappa}\)      \\
+    \verb|\symbb{K}| & \(\symbb{K}\) & \verb|\symbb{k}| & \(\symbb{k}\) & \verb|\symbb{\Lambda}|  & \(\symbb{\Lambda}\)  & \verb|\symbb{\lambda}|     & \(\symbb{\lambda}\)     \\
+    \verb|\symbb{L}| & \(\symbb{L}\) & \verb|\symbb{l}| & \(\symbb{l}\) & \verb|\symbb{\Mu}|      & \(\symbb{\Mu}\)      & \verb|\symbb{\mu}|         & \(\symbb{\mu}\)         \\
+    \verb|\symbb{M}| & \(\symbb{M}\) & \verb|\symbb{m}| & \(\symbb{m}\) & \verb|\symbb{\Nu}|      & \(\symbb{\Nu}\)      & \verb|\symbb{\nu}|         & \(\symbb{\nu}\)         \\
+    \verb|\symbb{N}| & \(\symbb{N}\) & \verb|\symbb{n}| & \(\symbb{n}\) & \verb|\symbb{\Xi}|      & \(\symbb{\Xi}\)      & \verb|\symbb{\xi}|         & \(\symbb{\xi}\)         \\
+    \verb|\symbb{O}| & \(\symbb{O}\) & \verb|\symbb{o}| & \(\symbb{o}\) & \verb|\symbb{O}|        & \(\symbb{O}\)        & \verb|\symbb{o}|           & \(\symbb{o}\)           \\
+    \verb|\symbb{P}| & \(\symbb{P}\) & \verb|\symbb{p}| & \(\symbb{p}\) & \verb|\symbb{\Pi}|      & \(\symbb{\Pi}\)      & \verb|\symbb{\pi}|         & \(\symbb{\pi}\)         \\
+    \verb|\symbb{Q}| & \(\symbb{Q}\) & \verb|\symbb{q}| & \(\symbb{q}\) & \verb|\symbb{\Rho}|     & \(\symbb{\Rho}\)     & \verb|\symbb{\rho}|        & \(\symbb{\rho}\)        \\
+    \verb|\symbb{R}| & \(\symbb{R}\) & \verb|\symbb{r}| & \(\symbb{r}\) & \verb|\symbb{\Sigma}|   & \(\symbb{\Sigma}\)   & \verb|\symbb{\sigma}|      & \(\symbb{\sigma}\)      \\
+    \verb|\symbb{S}| & \(\symbb{S}\) & \verb|\symbb{s}| & \(\symbb{s}\) & \verb|\symbb{\Tau}|     & \(\symbb{\Tau}\)     & \verb|\symbb{\tau}|        & \(\symbb{\tau}\)        \\
+    \verb|\symbb{T}| & \(\symbb{T}\) & \verb|\symbb{t}| & \(\symbb{t}\) & \verb|\symbb{\Upsilon}| & \(\symbb{\Upsilon}\) & \verb|\symbb{\upsilon}|    & \(\symbb{\upsilon}\)    \\
+    \verb|\symbb{U}| & \(\symbb{U}\) & \verb|\symbb{u}| & \(\symbb{u}\) & \verb|\symbb{\Phi}|     & \(\symbb{\Phi}\)     & \verb|\symbb{\phi}|        & \(\symbb{\phi}\)        \\
+    \verb|\symbb{V}| & \(\symbb{V}\) & \verb|\symbb{v}| & \(\symbb{v}\) & \verb|\symbb{\Chi}|     & \(\symbb{\Chi}\)     & \verb|\symbb{\chi}|        & \(\symbb{\chi}\)        \\
+    \verb|\symbb{W}| & \(\symbb{W}\) & \verb|\symbb{w}| & \(\symbb{w}\) & \verb|\symbb{\Psi}|     & \(\symbb{\Psi}\)     & \verb|\symbb{\psi}|        & \(\symbb{\psi}\)        \\
+    \verb|\symbb{X}| & \(\symbb{X}\) & \verb|\symbb{x}| & \(\symbb{x}\) & \verb|\symbb{\Omega}|   & \(\symbb{\Omega}\)   & \verb|\symbb{\omega}|      & \(\symbb{\omega}\)      \\
+    \verb|\symbb{Y}| & \(\symbb{Y}\) & \verb|\symbb{y}| & \(\symbb{y}\) &                         &                      & \verb|\symbb{\varepsilon}| & \(\symbb{\varepsilon}\) \\
+    \verb|\symbb{Z}| & \(\symbb{Z}\) & \verb|\symbb{z}| & \(\symbb{z}\) &                         &                      & \verb|\symbb{\vartheta}|   & \(\symbb{\vartheta}\)   \\
+    \bottomrule
+    \caption{二重線のアルファベットとギリシャ文字}
+    \label{tab:double_letters}
+\end{longtable}
+
+\section{ユーザー定義のコマンド}
+
+\subsection{数学・物理学に関するコマンド}
+
+\begin{longtable}{ccc}
+    \toprule
+    コマンド               & 出力                              & 説明               \\
+    \midrule
+    \verb|\N|              & \(\N\)                            & 自然数             \\
+    \verb|\Z|              & \(\Z\)                            & 整数               \\
+    \verb|\Q|              & \(\Q\)                            & 有理数             \\
+    \verb|\R|              & \(\R\)                            & 実数               \\
+    \verb|\C|              & \(\C\)                            & 複素数             \\
+    \verb|\K|              & \(\K\)                            & 上記の体のいずれか \\
+    \verb|\identity|       & \(\identity\)                     & 単位行列           \\
+    \verb|\Lagr|           & \(\Lagr\)                         & ラグランジアン     \\
+    \verb|\Ham|            & \(\Ham\)                          & ハミルトニアン     \\
+    \verb|\vb{v}|          & \(\vb{v}\)                        & ベクトル表記       \\
+    \verb|\dv{f}{x}|       & \(\displaystyle \dv{f}{x}\)       & 一階の微分         \\
+    \verb|\dv[2]{f}{x}|    & \(\displaystyle \dv[2]{f}{x}\)    & 二階の微分         \\
+    \verb|\dv[n]{f}{x}|    & \(\displaystyle \dv[n]{f}{x}\)    & n階の微分          \\
+    \verb|\pdv{f}{x}|      & \(\displaystyle \pdv{f}{x}\)      & 一階の偏微分       \\
+    \verb|\pdv[2]{f}{x}|   & \(\displaystyle \pdv[2]{f}{x}\)   & 二階の偏微分       \\
+    \verb|\pdv[n]{f}{x}|   & \(\displaystyle \pdv[n]{f}{x}\)   & n階の偏微分        \\
+    \verb|\highlight{a+b}| & \(\displaystyle \highlight{a+b}\) & 数式の強調         \\
+    \bottomrule
+    \caption{ユーザー定義の数学・物理学に関するコマンド}
+    \label{tab:user_defined_math_physics_commands}
+\end{longtable}
