@@ -277,26 +277,59 @@
 
 \begin{longtable}{ccc}
     \toprule
-    コマンド               & 出力                              & 説明               \\
+    コマンド  & 出力   & 説明               \\
     \midrule
-    \verb|\N|              & \(\N\)                            & 自然数             \\
-    \verb|\Z|              & \(\Z\)                            & 整数               \\
-    \verb|\Q|              & \(\Q\)                            & 有理数             \\
-    \verb|\R|              & \(\R\)                            & 実数               \\
-    \verb|\C|              & \(\C\)                            & 複素数             \\
-    \verb|\K|              & \(\K\)                            & 上記の体のいずれか \\
-    \verb|\identity|       & \(\identity\)                     & 単位行列           \\
-    \verb|\Lagr|           & \(\Lagr\)                         & ラグランジアン     \\
-    \verb|\Ham|            & \(\Ham\)                          & ハミルトニアン     \\
-    \verb|\vb{v}|          & \(\vb{v}\)                        & ベクトル表記       \\
-    \verb|\dv{f}{x}|       & \(\displaystyle \dv{f}{x}\)       & 一階の微分         \\
-    \verb|\dv[2]{f}{x}|    & \(\displaystyle \dv[2]{f}{x}\)    & 二階の微分         \\
-    \verb|\dv[n]{f}{x}|    & \(\displaystyle \dv[n]{f}{x}\)    & n階の微分          \\
-    \verb|\pdv{f}{x}|      & \(\displaystyle \pdv{f}{x}\)      & 一階の偏微分       \\
-    \verb|\pdv[2]{f}{x}|   & \(\displaystyle \pdv[2]{f}{x}\)   & 二階の偏微分       \\
-    \verb|\pdv[n]{f}{x}|   & \(\displaystyle \pdv[n]{f}{x}\)   & n階の偏微分        \\
-    \verb|\highlight{a+b}| & \(\displaystyle \highlight{a+b}\) & 数式の強調         \\
+    \verb|\N| & \(\N\) & 自然数             \\
+    \verb|\Z| & \(\Z\) & 整数               \\
+    \verb|\Q| & \(\Q\) & 有理数             \\
+    \verb|\R| & \(\R\) & 実数               \\
+    \verb|\C| & \(\C\) & 複素数             \\
+    \verb|\K| & \(\K\) & 上記の体のいずれか \\
     \bottomrule
     \caption{ユーザー定義の数学・物理学に関するコマンド}
     \label{tab:user_defined_math_physics_commands}
+\end{longtable}
+
+\begin{longtable}{ccc}
+    \toprule
+    コマンド         & 出力          & 説明     \\
+    \midrule
+    \verb|\identity| & \(\identity\) & 単位行列 \\
+    \bottomrule
+\end{longtable}
+
+
+\begin{longtable}{ccc}
+    \toprule
+    コマンド             & 出力                            & 説明         \\
+    \midrule
+    \verb|\vb{v}|        & \(\vb{v}\)                      & ベクトル表記 \\
+    \verb|\dv{f}{x}|     & \(\displaystyle \dv{f}{x}\)     & 一階の微分   \\
+    \verb|\dv[2]{f}{x}|  & \(\displaystyle \dv[2]{f}{x}\)  & 二階の微分   \\
+    \verb|\dv[n]{f}{x}|  & \(\displaystyle \dv[n]{f}{x}\)  & n階の微分    \\
+    \verb|\pdv{f}{x}|    & \(\displaystyle \pdv{f}{x}\)    & 一階の偏微分 \\
+    \verb|\pdv[2]{f}{x}| & \(\displaystyle \pdv[2]{f}{x}\) & 二階の偏微分 \\
+    \verb|\pdv[n]{f}{x}| & \(\displaystyle \pdv[n]{f}{x}\) & n階の偏微分  \\
+    \verb|\curl{v}|      & \(\displaystyle \curl{v}\)      & 回転         \\
+    \verb|\rot{v}|       & \(\displaystyle \rot{v}\)       & 回転         \\
+    \verb|\grad{v}|      & \(\displaystyle \grad{v}\)      & 勾配         \\
+    \verb|\diver{v}|     & \(\displaystyle \diver{v}\)     & 発散         \\
+    \bottomrule
+\end{longtable}
+
+\begin{longtable}{ccc}
+    \toprule
+    コマンド     & 出力      & 説明           \\
+    \midrule
+    \verb|\Lagr| & \(\Lagr\) & ラグランジアン \\
+    \verb|\Ham|  & \(\Ham\)  & ハミルトニアン \\
+    \bottomrule
+\end{longtable}
+
+\begin{longtable}{ccc}
+    \toprule
+    コマンド               & 出力                              & 説明       \\
+    \midrule
+    \verb|\highlight{a+b}| & \(\displaystyle \highlight{a+b}\) & 数式の強調 \\
+    \bottomrule
 \end{longtable}
