@@ -1,7 +1,5 @@
 \chapter{数式}
 
-\section{文字}
-
 \verb|unicode-math|を用いて太字、斜体などを統一的に扱えるようにしている。
 
 \subsection{通常文字}
@@ -15,8 +13,6 @@
         \verb|\symup{0123456789}| & \(\symup{0123456789}\) \\
         \bottomrule
     \end{tabular}
-    \caption{通常の数字}
-    \label{tab:upright_numbers}
 \end{table}
 
 \begin{longtable}{cccccccc}
@@ -50,8 +46,6 @@
     \verb|\symup{Y}| & \(\symup{Y}\) & \verb|\symup{y}| & \(\symup{y}\) &                         &                      & \verb|\symup{\varepsilon}| & \(\symup{\varepsilon}\) \\
     \verb|\symup{Z}| & \(\symup{Z}\) & \verb|\symup{z}| & \(\symup{z}\) &                         &                      & \verb|\symup{\vartheta}|   & \(\symup{\vartheta}\)   \\
     \bottomrule
-    \caption{通常のアルファベットとギリシャ文字}
-    \label{tab:upright_letters}
 \end{longtable}
 
 \subsection{斜体}
@@ -87,11 +81,10 @@
     \verb|\symit{Y}| & \(\symit{Y}\) & \verb|\symit{y}| & \(\symit{y}\) &                         &                      & \verb|\symit{\varepsilon}| & \(\symit{\varepsilon}\) \\
     \verb|\symit{Z}| & \(\symit{Z}\) & \verb|\symit{z}| & \(\symit{z}\) &                         &                      & \verb|\symit{\vartheta}|   & \(\symit{\vartheta}\)   \\
     \bottomrule
-    \caption{斜体のアルファベットとギリシャ文字}
-    \label{tab:italic_letters}
 \end{longtable}
 
 \subsection{太字}
+すべての文字に対して太字が定義されている。
 
 \begin{table}[H]
     \centering
@@ -102,8 +95,6 @@
         \verb|\symbf{0123456789}| & \(\symbf{0123456789}\) \\
         \bottomrule
     \end{tabular}
-    \caption{Bold numbers}
-    \label{tab:bold_numbers}
 \end{table}
 
 \begin{longtable}{cccccccc}
@@ -137,8 +128,6 @@
     \verb|\symbf{Y}| & \(\symbf{Y}\) & \verb|\symbf{y}| & \(\symbf{y}\) &                         &                      & \verb|\symbf{\varepsilon}| & \(\symbf{\varepsilon}\) \\
     \verb|\symbf{Z}| & \(\symbf{Z}\) & \verb|\symbf{z}| & \(\symbf{z}\) &                         &                      & \verb|\symbf{\vartheta}|   & \(\symbf{\vartheta}\)   \\
     \bottomrule
-    \caption{太字のアルファベットとギリシャ文字}
-    \label{tab:bold_letters}
 \end{longtable}
 
 \subsection{筆記体}
@@ -176,8 +165,6 @@
     \verb|\symcal{Y}| & \(\symcal{Y}\) & \verb|\symcal{y}| & \(\symcal{y}\) \\
     \verb|\symcal{Z}| & \(\symcal{Z}\) & \verb|\symcal{z}| & \(\symcal{z}\) \\
     \bottomrule
-    \caption{筆記体のアルファベット}
-    \label{fig:calligraphic_alphabet}
 \end{longtable}
 
 \subsection{ドイツ文字}
@@ -215,8 +202,6 @@
     \verb|\symfrak{Y}| & \(\symfrak{Y}\) & \verb|\symfrak{y}| & \(\symfrak{y}\) \\
     \verb|\symfrak{Z}| & \(\symfrak{Z}\) & \verb|\symfrak{z}| & \(\symfrak{z}\) \\
     \bottomrule
-    \caption{ドイツ文字}
-    \label{fig:german_alphabet}
 \end{longtable}
 
 \subsection{二重線}
@@ -232,8 +217,6 @@
         \verb|\symbb{0123456789}| & \(\symbb{0123456789}\) \\
         \bottomrule
     \end{tabular}
-    \caption{二重線の数字}
-    \label{tab:doubled_numbers}
 \end{table}
 
 \begin{longtable}{cccccccc}
@@ -266,70 +249,5 @@
     \verb|\symbb{X}| & \(\symbb{X}\) & \verb|\symbb{x}| & \(\symbb{x}\) & \verb|\symbb{\Omega}|   & \(\symbb{\Omega}\)   & \verb|\symbb{\omega}|      & \(\symbb{\omega}\)      \\
     \verb|\symbb{Y}| & \(\symbb{Y}\) & \verb|\symbb{y}| & \(\symbb{y}\) &                         &                      & \verb|\symbb{\varepsilon}| & \(\symbb{\varepsilon}\) \\
     \verb|\symbb{Z}| & \(\symbb{Z}\) & \verb|\symbb{z}| & \(\symbb{z}\) &                         &                      & \verb|\symbb{\vartheta}|   & \(\symbb{\vartheta}\)   \\
-    \bottomrule
-    \caption{二重線のアルファベットとギリシャ文字}
-    \label{tab:double_letters}
-\end{longtable}
-
-\section{ユーザー定義のコマンド}
-
-\subsection{数学・物理学に関するコマンド}
-
-\begin{longtable}{ccc}
-    \toprule
-    コマンド  & 出力   & 説明               \\
-    \midrule
-    \verb|\N| & \(\N\) & 自然数             \\
-    \verb|\Z| & \(\Z\) & 整数               \\
-    \verb|\Q| & \(\Q\) & 有理数             \\
-    \verb|\R| & \(\R\) & 実数               \\
-    \verb|\C| & \(\C\) & 複素数             \\
-    \verb|\K| & \(\K\) & 上記の体のいずれか \\
-    \bottomrule
-    \caption{ユーザー定義の数学・物理学に関するコマンド}
-    \label{tab:user_defined_math_physics_commands}
-\end{longtable}
-
-\begin{longtable}{ccc}
-    \toprule
-    コマンド         & 出力          & 説明     \\
-    \midrule
-    \verb|\identity| & \(\identity\) & 単位行列 \\
-    \bottomrule
-\end{longtable}
-
-
-\begin{longtable}{ccc}
-    \toprule
-    コマンド             & 出力                            & 説明         \\
-    \midrule
-    \verb|\vb{v}|        & \(\vb{v}\)                      & ベクトル表記 \\
-    \verb|\dv{f}{x}|     & \(\displaystyle \dv{f}{x}\)     & 一階の微分   \\
-    \verb|\dv[2]{f}{x}|  & \(\displaystyle \dv[2]{f}{x}\)  & 二階の微分   \\
-    \verb|\dv[n]{f}{x}|  & \(\displaystyle \dv[n]{f}{x}\)  & n階の微分    \\
-    \verb|\pdv{f}{x}|    & \(\displaystyle \pdv{f}{x}\)    & 一階の偏微分 \\
-    \verb|\pdv[2]{f}{x}| & \(\displaystyle \pdv[2]{f}{x}\) & 二階の偏微分 \\
-    \verb|\pdv[n]{f}{x}| & \(\displaystyle \pdv[n]{f}{x}\) & n階の偏微分  \\
-    \verb|\curl{v}|      & \(\displaystyle \curl{v}\)      & 回転         \\
-    \verb|\rot{v}|       & \(\displaystyle \rot{v}\)       & 回転         \\
-    \verb|\grad{v}|      & \(\displaystyle \grad{v}\)      & 勾配         \\
-    \verb|\diver{v}|     & \(\displaystyle \diver{v}\)     & 発散         \\
-    \bottomrule
-\end{longtable}
-
-\begin{longtable}{ccc}
-    \toprule
-    コマンド     & 出力      & 説明           \\
-    \midrule
-    \verb|\Lagr| & \(\Lagr\) & ラグランジアン \\
-    \verb|\Ham|  & \(\Ham\)  & ハミルトニアン \\
-    \bottomrule
-\end{longtable}
-
-\begin{longtable}{ccc}
-    \toprule
-    コマンド               & 出力                              & 説明       \\
-    \midrule
-    \verb|\highlight{a+b}| & \(\displaystyle \highlight{a+b}\) & 数式の強調 \\
     \bottomrule
 \end{longtable}
