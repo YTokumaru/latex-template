@@ -26,3 +26,18 @@ WindowsユーザーはWSL2などのLinuxの仮想環境上で\LaTeX を書くこ
 これはインターネット上に多くの文献（日英ともに）が存在し、トラブルシューティングがしやすいためである。
 \LaTeX のコンパイル時に必要となるプログラムもデフォルトのパッケージマネージャーでインストールできる場合がほとんどなので、文献上のコマンドをそのまま実行するだけで環境構築を進める事ができる。
 
+\subsection{ディレクトリ構成}
+
+\begin{figure}[H]
+    \centering
+    \includesvg[width=0.5\textwidth, inkscapeformat=png]{figures/directory.drawio.svg}
+    \caption{ディレクトリ構成}
+    \label{fig:directory}
+\end{figure}
+
+ディレクトリ構成は図\ref{fig:directory}のようにすることを推奨する。
+ルートディレクトリを教科ごとに分割し、その中にレポートごとのディレクトリを作成する。
+レポートごとのディレクトリの中には\verb|report.tex|というファイルを置き、この中にレポート内容を記述する。
+レポートに利用する画像ファイルは\verb|figures/|の中に、実験などで得られたデータは\verb|data/|の中に保存する。
+\LaTeX ファイルをコンパイルした際に生成されるファイルは\verb|build/|の中に保存すると、ディレクトリ構成が整理されていて見やすくなる。
+
