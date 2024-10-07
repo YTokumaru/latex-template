@@ -92,6 +92,13 @@ pdfファイルのプレビューは\verb|zathura|などのpdfビューアを使
 
 \subsection{図の\LaTeX への受け渡し}
 
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width=0.9\textwidth]{figures/dataflow.drawio.svg}
+    \caption{Jupyter Notebookで生成したグラフがpdfに反映されるまでのフロー}
+    \label{fig:flow}
+\end{figure}
+
 データを解析した結果を図表として\LaTeX に受け渡すためには、\verb|matplotlib|の\verb|savefig|などを用いて、\verb|figures/|ディレクトリ内に画像ファイルを保存する。
 これを\LaTeX 側から参照することで、データ解析結果を図表としてレポートに貼り付けることができる。
 データ解析をして図表が変わった場合は、コードを実行したときに更新された画像が元の画像を上書きするので、レポートをコンパイルするときには常に最新の図表が反映される。
