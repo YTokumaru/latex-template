@@ -101,6 +101,17 @@ GitHubで「Use this template」をクリックして、リポジトリを作成
 \end{document}
 ```
 
+### Preamble の読み込み
+
+このテンプレートは`preamble`を`git submodule`で管理しているため、これを別にアップデートしないとプリアンブルのファイルを使用できません。
+使用するためには`clone`をしたあとにプロジェクトのルートディレクトリに移動して、
+
+```bash
+git submodule init
+git submodule update
+```
+を実行してください。
+
 ## 設定の編集方法
 
 このテンプレートは、`ltjsreport`向けに設定されています。
